@@ -1,0 +1,164 @@
+@font-face{
+    font-family: "Itim";
+    src: url("Itim-Regular.ttf");
+}
+
+@font-face{
+    font-family: "InterRegular";
+    src: url("Inter-Regular.otf");
+}
+
+@font-face{
+    font-family: "InterSemiBold";
+    src: url("Inter-SemiBold.otf");
+}
+
+body{
+    background: #FFC8C8;
+}
+
+#menu_container{
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 246.5px);
+    left: calc(50% - 183px);
+    width: 366px;
+    height: 493px;
+    background: url("background.png");
+    border-radius: 10px;
+}
+
+#start_btn{
+    transition: 0.3s;
+    margin-top: 60px;
+    width: 130px;
+    height: 40.5px;
+    background: none;
+    border: #FF5252 solid 2px;
+    color: #FF5252;
+    border-radius: 10px;
+    font-family: InterSemiBold;
+}
+
+.music_playing{
+    background: #FF5252 !important;
+    color: white !important;
+}
+
+select{
+    width: 322px;
+    height: 36px;
+    border: 2px solid #BDBDBD;
+    border-radius: 5px;
+}
+
+img{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    width: 95px;
+}
+
+#menu_container > div{
+    text-align: right !important;
+    margin-right: calc(calc(100% - 322px)/2);
+}
+
+span{
+    font-family: Itim;
+    font-size: 50px;
+}
+
+.span > span{
+    font-size: 65px !important;
+}
+
+#refresh{
+    transition: 0.5s;
+    background-color: #F8F8F8;
+    background-image: url("refresh_icon.svg");
+    background-size: cover;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+#refresh:hover , #start_btn:hover{
+    translate: 0 -2px;
+}
+
+#refresh:active , #start_btn:active{
+    transition: 0.2s;
+    translate: 0 2px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    background: none; /* Grey background */
+    margin-bottom: 8px;
+    width: 100px;
+    height: 1px;
+    outline: 1px solid #BDBDBD;
+  }
+
+.slider::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 8px; /* Set a specific slider handle width */
+    height: 14px; /* Slider handle height */
+    background: #FF5252; /* Green background */
+    border-radius: 5px;
+    cursor: pointer; /* Cursor on hover */
+    z-index: 2;
+}
+
+div > div > span{
+    margin-left: -50px;
+    margin-top: 5px;
+    position: absolute;
+    font-family: interRegular;
+    font-size: 12px;
+}
+
+.category{
+    text-align: left;
+    left: calc(calc(100% - 322px)/2) !important;
+    margin-left: 0 !important;
+}
+
+.credits{
+    font-family: InterRegular;
+    font-size: 10px;
+    position: absolute;
+    color: white;
+    bottom: -24px;
+}
+.credits > div{
+    text-align: left;
+}
+
+.version{
+    font-family: InterRegular;
+    font-size: 12px;
+    position: absolute;
+    text-align: right;
+    color: white;
+    right : -20px;
+    bottom: -15px;
+}
+
+.imports{
+    display: flex;
+    margin-left: calc(calc(100% - 322px)/2);
+}
+
+p{
+    font-family: InterRegular;
+    font-size: 11px;
+    color: #FF5252;
+    cursor: pointer;
+    margin-right: 10px;
+}

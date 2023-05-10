@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmKeys</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu_container">
+        <img src="logo.svg" alt=""><br>
+        <span id="title"><span>C</span>alm<span>K</span>eys</span><br>
+        <div><button id="refresh"></button></div>
+        <div>
+            <span class="category">Song :</span>
+            <span>Volume:</span>
+            <input type="range" min="1" max="100" value="50" class="slider" id="song_volume">
+        </div>
+        <select id="song_choicer"></select>
+        <div>
+            <span class="category">Keys :</span>
+            <span>Volume:</span>
+            <input type="range" min="1" max="100" value="50" class="slider" id="keySound_volume">
+        </div>
+        <select id="keySound_choicer"></select>
+
+        <div class="imports">
+            <p id="importsongs">Import Songs</p>
+            <p id="importkeys">Import KeySounds</p>
+        </div>
+        
+        <button id="start_btn">START</button>
+
+        <div class="credits">
+            <div>Made by: Esteban Huertas</div>
+            <div>estebanhuertas02@gmail.com</div>
+        </div>
+
+        <div class="version">V1.0.0</div>
+    </div>
+    
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

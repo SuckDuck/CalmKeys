@@ -1,0 +1,13 @@
+{
+    "high":[
+        "track0.wav",
+        "track1.wav",
+        "track2.wav"
+    ],
+
+    "low":[
+        "track1.wav",
+        "track2.wav",
+        "track3.wav"
+    ]
+}
